@@ -15,9 +15,9 @@ const Character = () => {
     : {};
   const details = characterDetails
     ? {
-        comics: `Comic appearances: ${comics.available}`,
+        comics: `Comics appearances: ${comics.available}`,
         series: `Series appearances: ${series.available}`,
-        stories: `Story appearances: ${stories.available}`,
+        stories: `Stories appearances: ${stories.available}`,
       }
     : {};
   
@@ -33,7 +33,7 @@ const Character = () => {
         )}
       </div>
       {characterDetails ? (
-        <div className="max-w-md mx-auto bg-amber-100 rounded-xl shadow-md overflow-hidden md:max-w-screen-lg	">
+        <div className="max-w-md md:mx-auto mx-4 bg-stone-300 rounded-xl shadow-md overflow-hidden md:max-w-screen-lg	">
           <div className="md:flex">
             <div className="md:shrink-0">
               <img
