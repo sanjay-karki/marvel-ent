@@ -33,7 +33,7 @@ const Character = () => {
         )}
       </div>
       {characterDetails ? (
-        <div className="max-w-md md:mx-auto mx-4 bg-stone-300 rounded-xl shadow-md overflow-hidden md:max-w-screen-lg	">
+        <div className="max-w-md md:mx-auto mx-4 mb-4 bg-stone-300 rounded-xl shadow-md overflow-hidden md:max-w-screen-lg	">
           <div className="md:flex">
             <div className="md:shrink-0">
               <img
