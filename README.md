@@ -2,6 +2,8 @@
 **Live Demo:**
 https://sanjay-marvel-universe.netlify.app/
 
+<br />
+
 ## :page_with_curl:	Description
 **_Simple dashboard using React Js, TailwindCss, Chart.js, and MUI React._**
 - The application utilizes the [Marvel API](https://developer.marvel.com/) to retrieve real-time data.
