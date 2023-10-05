@@ -1,0 +1,40 @@
+export const columns = [
+    {
+      field: "no",
+      headerName: "No.",
+      width: 75,
+      flex: 0.15,
+      minWidth: 75,
+    },
+    {
+      field: "id",
+      headerName: "ID",
+      width: 75,
+      flex: 0.15,
+      minWidth: 75,
+    },
+    {
+      field: "thumbnail",
+      headerName: "Thumbnail",
+      width: 300,
+      maxWidth: 300,
+      flex: 1,
+      renderCell: (params) => <img src={params.value} />,
+      sortable: false,
+    },
+    {
+      field: "name",
+      headerName: "Name",
+      width: 150,
+      flex: 0.3,
+      minWidth: 150,
+    },
+    {
+      field: "description",
+      headerName: "Description",
+      width: 150,
+      flex: 1,
+      minWidth: 150,
+      sortable: false,
+    },
+  ];
