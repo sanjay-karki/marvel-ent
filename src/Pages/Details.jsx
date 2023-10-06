@@ -97,16 +97,16 @@ const Details = () => {
         <div className="details-page">
           <div className="details-body md:mx-48 mx-8 mb-16">
             <div className="flex flex-col my-12">
-              <h3 className="font-bold mb-8 text-2xl text-slate-300">
+              <h3 className="font-bold md:mb-8 md:text-xl text-justify text-slate-300">
                 Below is a data table featuring a roster of 20 Marvel
                 characters. Each page conveniently displays 20 entries, and
                 clicking on any row will seamlessly transport the user to the
-                respective character's profile page. <br /> Additionally, it
-                incorporates a real-time search feature that empowers users to
-                swiftly locate characters by their name.
+                respective character's profile page. <br />
+                <br /> Additionally, it incorporates a real-time search feature
+                that empowers users to swiftly locate characters by their name.
               </h3>
               <div className="md:flex justify-start items-center gap-8">
-                <h3 className="font-bold flex-1 text-2xl text-slate-300">
+                <h3 className="font-bold flex-1 py-4 md:text-xl text-justify text-slate-300">
                   To compare characters by the number of comics they've appeared
                   in, simply click this button 👉
                 </h3>
@@ -123,7 +123,7 @@ const Details = () => {
                 </Button>
               </div>
               {showChart && (
-                <p className="font-semibold text-slate-300 mt-4">
+                <p className="italic md:font-semibold text-slate-300/50 mt-4">
                   You can enable or disable characters in the graphical
                   representation by clicking on the label names. Chart data
                   remains unchanged during search operations.

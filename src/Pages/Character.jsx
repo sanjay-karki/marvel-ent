@@ -20,42 +20,43 @@ const Character = () => {
         stories: `Stories appearances: ${stories.available}`,
       }
     : {};
-  
+
   return (
     <>
       <Navbar />
       <div className="text-align-center mb-4 mt-8">
         <MarvelLogo width={250} height={101} />
         {characterDetails && (
-          <h1 className="text-4xl font-bold mt-4 mb-8 text-slate-300">
+          <h1 className="text-4xl font-bold my-8 text-slate-300">
             Character Details
           </h1>
         )}
       </div>
       {characterDetails ? (
-        <div className="max-w-md md:mx-auto mx-4 mb-4 bg-stone-300 rounded-xl shadow-md overflow-hidden md:max-w-screen-lg	">
-          <div className="md:flex">
-            <div className="md:shrink-0">
-              <img
-                className="h-48 w-full object-cover md:h-full md:w-48"
-                src={thumbnail}
-                alt={`Image of Marvel Character with ID: ${id}`}
-              />
-            </div>
-            <div className="p-8">
-              <div className="uppercase tracking-wide text-sm text-red-custom font-semibold">
-                {`ID: ${id}`}
-                {/* text-indigo-500 */}
+        <div className="px-4">
+          <div className="max-w-md mx-auto mb-12 bg-stone-300 rounded-xl shadow-md overflow-hidden md:max-w-screen-lg	">
+            <div className="md:flex">
+              <div className="md:shrink-0">
+                <img
+                  className="h-52 w-full object-cover md:h-full md:w-52"
+                  src={thumbnail}
+                  alt={`Image of Marvel Character with ID: ${id}`}
+                />
               </div>
-              <p className="block mt-1 text-lg leading-tight font-medium text-black ">
-                {name}
-              </p>
-              <p className="mt-2 text-slate-500">
-                {description || "No character description available."}
-              </p>
-              <p className="mt-2 text-slate-500">{details.comics}</p>
-              <p className="mt-2 text-slate-500">{details.series}</p>
-              <p className="mt-2 text-slate-500">{details.stories}</p>
+              <div className="p-8">
+                <div className="uppercase tracking-wide text-sm text-red-custom font-semibold">
+                  {`ID: ${id}`}
+                </div>
+                <p className="block mt-1 text-lg leading-tight font-medium text-black ">
+                  {name}
+                </p>
+                <p className="mt-2 text-slate-500">
+                  {description || "No character description available."}
+                </p>
+                <p className="mt-2 text-slate-500">{details.comics}</p>
+                <p className="mt-2 text-slate-500">{details.series}</p>
+                <p className="mt-2 text-slate-500">{details.stories}</p>
+              </div>
             </div>
           </div>
         </div>

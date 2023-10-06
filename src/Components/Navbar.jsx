@@ -10,7 +10,7 @@ const Navbar = () => {
   ];
   const navItemClassName = `font-bold md:text-2xl text-xl transition-all text-white hover:text-red-700`
   return (
-    <nav className="navbar-container sticky top-0 flex flex-row justify-center items-center md:gap-24 gap-8 p-8 bg-black" style={{zIndex: "999999999999"}}>
+    <nav className="navbar-container sticky top-0 flex flex-row justify-center items-center md:gap-24 gap-8 md:p-8 p-4 bg-black" style={{zIndex: "999999999999"}}>
       {navbarItems.map((item, i) => {
         return (
           <NavLink
