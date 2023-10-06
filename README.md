@@ -1,3 +1,32 @@
+# :spider_web: MARVEL UNIVERSE DASHBOARD
+**Live Demo:**
+https://sanjay-marvel-universe.netlify.app/
+
+<br />
+
+## :page_with_curl:	Description
+**_Simple dashboard using React Js, TailwindCss, Chart.js, and MUI React._**
+- The application utilizes the [Marvel API](https://developer.marvel.com/) to retrieve real-time data.
+- It fetches and presents characters in real-time.
+- These characters are displayed in a data table with columns such as `Name`, `Description`, and `Thumbnail`.
+- The table supports pagination with 20 characters per page.
+- Clicking on a row will navigate the user to the character's profile page.
+- The character profile page provides comprehensive information about the character, including their `Name`, `Description`, `Thumbnail`, `Comics Appeared In`, `Series`, and more.
+- It employs a Chart.js to visualize characters based on the number of comics they have appeared in.
+- The application includes a filter feature to enable or disable the display of characters in the graphical representation.
+- Real-time search functionality is implemented, allowing users to search for characters by name (like Hulk, Thanos, etc.).
+- It ensures the application is responsive, adapting to different devices (desktop, tablet, and mobile), and undergoes testing on multiple browsers to ensure cross-browser compatibility.
+<br />
+
+
+### :hammer_and_wrench:	Built with
+
+- [React](https://reactjs.org/) - JS Library
+- [TailwindCss](https://tailwindcss.com/)
+- [Chart.js](https://www.chartjs.org/)
+- [MUI React](https://mui.com/)
+<br />
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
