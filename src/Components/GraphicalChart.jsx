@@ -31,9 +31,20 @@ const GraphicalChart = () => {
     ],
   };
 
+  const plugin = {
+    beforeInit(chart) {
+      const originalFit = chart.legend.fit;
+  
+      chart.legend.fit = function fit() {
+        originalFit.bind(chart.legend)();
+        this.height += 30;
+      }
+    }
+  }
+
   return (
     <>
-      <Doughnut data={chartData} />
+      <Doughnut plugins={[plugin]} data={chartData} />
     </>
   );
 };

@@ -96,7 +96,7 @@ const Details = () => {
       <ThemeProvider theme={darkTheme}>
         <div className="details-page">
           <div className="details-body md:mx-48 mx-8 mb-16">
-            <div className="flex flex-col my-12">
+            <div className="flex flex-col md:mt-12 my-8 ">
               <h3 className="font-bold md:mb-8 md:text-xl text-justify text-slate-300">
                 Below is a data table featuring a roster of 20 Marvel
                 characters. Each page conveniently displays 20 entries, and
@@ -106,7 +106,7 @@ const Details = () => {
                 that empowers users to swiftly locate characters by their name.
               </h3>
               <div className="md:flex justify-start items-center gap-8">
-                <h3 className="font-bold flex-1 py-4 md:text-xl text-justify text-slate-300">
+                <h3 className="font-bold flex-1 py-4 md:text-xl text-slate-300">
                   To compare characters by the number of comics they've appeared
                   in, simply click this button 👉
                 </h3>
@@ -130,7 +130,7 @@ const Details = () => {
                 </p>
               )}
             </div>
-            {showChart && <GraphicalChart />}
+            {showChart && <div className="max-w-5xl mx-auto"><GraphicalChart /></div>}
             <TextField
               fullWidth
               variant="outlined"
