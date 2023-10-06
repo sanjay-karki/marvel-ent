@@ -12,7 +12,7 @@ https://sanjay-marvel-universe.netlify.app/
 - The table supports pagination with 20 characters per page.
 - Clicking on a row will navigate the user to the character's profile page.
 - The character profile page provides comprehensive information about the character, including their `Name`, `Description`, `Thumbnail`, `Comics Appeared In`, `Series`, and more.
-- It employs a Chart.js to visualize characters based on the number of comics they have appeared in.
+- It employs Chart.js to visualize characters based on the number of comics they have appeared in.
 - The application includes a filter feature to enable or disable the display of characters in the graphical representation.
 - Real-time search functionality is implemented, allowing users to search for characters by name (like Hulk, Thanos, etc.).
 - It ensures the application is responsive, adapting to different devices (desktop, tablet, and mobile), and undergoes testing on multiple browsers to ensure cross-browser compatibility.
